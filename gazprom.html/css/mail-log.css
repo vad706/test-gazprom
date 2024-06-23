@@ -1,0 +1,117 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto:200,300,400,500,600,700,800,900,300i,400i,500i,600i,700i,800i,900i&display=swap);
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	outline: none;
+}
+
+html {
+	min-height: 100%;
+	-webkit-font-smoothing: subpixel-antialiased;
+}
+
+body {
+	font-family: 'Roboto', Verdana, Tahoma, Arial, Helvetica, sans-serif;
+	overflow-y: scroll;
+	margin: 30px 10px 10px 10px;
+	color: #000;
+	background-color: #fff;
+	font-size: 14px;
+}
+
+a {
+	text-decoration: none;
+}
+
+.search-form {
+	background-color: #f2f2f2;
+	width: 600px;
+	margin: 0 auto;
+	padding: 0px 20px 20px 20px;
+}
+
+.container-label {
+	padding: 10px 0px 0px 0px;
+}
+
+.label-input {
+	font-weight: 300;
+	color: #808080;
+}
+	
+.container-input {
+	padding: 10px 0px 0px 0px;
+}
+
+.search-input {
+	width: 100%;
+	border: 1px solid rgba(0, 0, 0, 0.2);
+	padding: 10px;
+}
+
+.container-button {
+	padding: 10px 0px 0px 0px;
+	text-align: right;
+}
+	
+.submit-button {
+	border: 1px solid #0f8fee;
+	background-color: #0f8fee;
+	color: #fff;
+	width: 120px;
+	height: 35px;
+}
+
+.submit-button:hover {
+	border: 1px solid rgba(15, 143, 238, 0.5);
+	background-color: rgba(15, 143, 238, 0.7);
+}
+	
+.container-text {
+	width: 1120px;
+	margin: 20px auto;
+}
+
+.results-table {
+	width: 100%;
+	background-color: #f2f2f2;
+}
+
+.td-head-time {
+	width: 20%;
+	background-color: #f2f2f2;
+	padding: 10px;
+	text-align: center;
+}
+
+.td-head-content {
+	width: 80%;
+	background-color: #f2f2f2;
+	padding: 10px;
+	text-align: center;
+}
+
+.td-time-creation {
+	background-color: #fff;
+	color: #505050;
+	padding: 10px;
+	text-align: center;
+}
+
+.td-post-content {
+	background-color: #fff;
+	color: #505050;
+	padding: 10px;
+}
+
+.search-message {
+	text-align: center;
+}
+	
+.img-loading {
+	width: 150px;
+	margin: 0 auto;
+	display: block;
+}
