@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
+<link rel="shortcut icon" href="/images/favicon.ico" type="image/x-icon">
+
+<title>Почтовый лог</title>
+<link rel="stylesheet" href="/css/mail-log.css">
+
+<script src="/js/jquery-3.5.1.min.js"></script>
+</head>
+<body>
+	
+<form class="search-form">
+<div class="container-label">
+<label class="label-input" for="search-input">Поиск в почтовом логе</label>
+</div>
+<div class="container-input">
+<input class="search-input" name="search-input" id="search-input" autofocus>
+</div>
+<div class="container-button">
+<button class="submit-button" id="submit-button">Искать</button>	
+</div>
+</form>
+
+<div class="container-text" id="container-text">	
+</div>
+
+<script>
+$(document).ready(function()
+{	
+	$("#submit-button").on('click', function()
+	{
+		$("#container-text").html('<img src="/images/loading.svg" class="img-loading">');
+		
+		let data = {};
+		data['search-input'] = $('#search-input').val();
+		$.post("/cgi/search_records.pl", data, function(data, status)
+		{
+			if(status === "success")
+			{
+				$("#container-text").html(data);
+			}
+		});
+		
+		return false;
+	});
+});
+</script>
+</body>
+</html>
