@@ -1,0 +1,12 @@
+<table class="results-table" border="0" cellpadding="0" cellspacing="2">
+<tr>
+<td class="td-head-time">Время создания</td>
+<td class="td-head-content">Содержание записи</td>
+</tr>
+<TMPL_LOOP NAME=LOG_INFO>
+<tr>
+<td class="td-time-creation"><TMPL_VAR NAME=CREATED></td>
+<td class="td-post-content"><TMPL_VAR NAME=STR></td>
+</tr>
+</TMPL_LOOP>
+</table>
